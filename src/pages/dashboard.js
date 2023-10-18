@@ -119,7 +119,6 @@ const Dashboard = () => {
   }
 
   if (load3dModel) {
-    console.log('here');
     const elements = document.getElementsByClassName('icon-wrapper')
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.pointerEvents = "none";

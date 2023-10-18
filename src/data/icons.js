@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     title: 'Clock',
-    icon:'/assets/images/clock.png',
+    icon:'/assets/images/Clock.png',
     model:'/assets/models/clock.glb',
     tags: "clock,yellow,home",
     category: 'Others'
