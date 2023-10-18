@@ -11,10 +11,10 @@ const LoadModel = ({
   modelRef,
 }) => {
 
-  const MatModel = () => {
-    const gltf = useLoader(GLTFLoader, "/assets/models/net.glb");
-    return <primitive scale={2} rotate={[0.5,0.2,0.5]} position={[0,1,0]} object={gltf.scene} />;
-  }
+  // const MatModel = () => {
+  //   const gltf = useLoader(GLTFLoader, "/assets/models/net.glb");
+  //   return <primitive scale={2} rotate={[0.5,0.2,0.5]} position={[0,1,0]} object={gltf.scene} />;
+  // }
 
   return (
     <div className="model-container">
@@ -27,14 +27,14 @@ const LoadModel = ({
           shadow-mapSize-height={2048}
           shadow-mapSize-width={2048}
         />
-        {/* <Scene
+        <Scene
           modelRef={modelRef}
           modelPath={modelpath}
           positionModel={positionModel}
           rotateModel={rotateModel}
           setDisableIconClick={setDisableIconClick}
-        /> */}
-        <MatModel />
+        />
+        {/* <MatModel /> */}
       </Canvas>
     </div>
   );
